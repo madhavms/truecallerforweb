@@ -59,7 +59,7 @@ const TruecallerSearchComponent: React.FC = () => {
   };
 
   return (
-    <div className="p-4 mt-24 md:mt-32 lg:mt-64 max-w-md mx-auto">
+    <div className="p-4 mt-24 md:mt-32 lg:mt-60 max-w-md mx-auto">
       {loading && <LoadingSquare />}
       <form onSubmit={performTruecallerSearch} className="mb-4">
         <div className="flex flex-col justify-center items-center gap-x-2 sm:flex-row">
@@ -86,7 +86,7 @@ const TruecallerSearchComponent: React.FC = () => {
       )}
 
       {result && (
-        <div className="bg-white p-4 rounded-lg shadow-md border border-gray-200">
+        <div className="bg-white mt-10 p-4 rounded-lg shadow-md border border-gray-200">
           <h2 className="text-xl mb-2 font-semibold border-b pb-2">
             {result.name}
           </h2>
