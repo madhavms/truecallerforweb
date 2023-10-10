@@ -1,13 +1,14 @@
-import './App.css'
-import TruecallerSearchComponent from './components/TruecallerSearchComponent'
+import "./App.css";
+import Navbar from "./components/Navbar";
+import TruecallerSearchComponent from "./components/TruecallerSearchComponent";
 
 function App() {
   return (
-    <div className="container mx-auto p-4">
-    <TruecallerSearchComponent />
-  </div>
-
-  )
+    <div>
+      <Navbar />
+      <TruecallerSearchComponent />
+    </div>
+  );
 }
 
-export default App
+export default App;
